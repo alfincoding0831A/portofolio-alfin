@@ -144,17 +144,17 @@ a {
 }
 
 .hero-card {
-    background: rgba(15, 23, 42, 0.92);
-    border: 1px solid rgba(148, 163, 184, 0.12);
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 26px;
     padding: 2.2rem;
-    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .hero-card:hover {
     transform: translateY(-4px);
-    border-color: rgba(56, 189, 248, 0.28);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .hero-card h2 {
@@ -194,22 +194,22 @@ a {
 .project-card {
     padding: 1.85rem;
     border-radius: 24px;
-    background: rgba(15, 23, 42, 0.88);
-    border: 1px solid rgba(148, 163, 184, 0.12);
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
     transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
 
 .card:hover,
 .project-card:hover {
     transform: translateY(-3px);
-    border-color: rgba(56, 189, 248, 0.2);
-    background: rgba(15, 23, 42, 0.98);
+    border-color: rgba(255, 255, 255, 0.3);
+    background: #242424;
 }
 
 .card h3,
 .project-card h3 {
     margin: 0 0 1rem;
-    color: #f8fafc;
+    color: #ffffff;
 }
 
 .card p,
