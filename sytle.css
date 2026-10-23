@@ -27,7 +27,7 @@ html, body {
 
 body {
     line-height: 1.7;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: ease, color 0.3s ease;
 }
 
 a {
