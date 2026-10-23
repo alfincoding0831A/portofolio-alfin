@@ -4,8 +4,8 @@
     --surface-strong: #0f172a;
     --text: #e2e8f0;
     --muted: #94a3b8;
-    --primary: #60a5fa;
-    --accent: #38bdf8;
+    --primary: #ffae00;
+    --accent: #ffbb00;
     --success: #22c55e;
     --border: rgba(148, 163, 184, 0.2);
 }
@@ -19,8 +19,8 @@ html, body {
     padding: 0;
     min-height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 24%),
-                radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.08), transparent 20%),
+    background: radial-gradient(circle at top left, rgba(255, 230, 0, 0.12), transparent 24%),
+                radial-gradient(circle at bottom right, rgba(224, 61, 11, 0.08), transparent 20%),
                 linear-gradient(180deg, #0b1220 0%, #090f1b 100%);
     color: var(--text);
 }
