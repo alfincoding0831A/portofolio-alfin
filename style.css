@@ -4,7 +4,7 @@
     --surface: #151b2e;
     --surface-2: #1a2238;
     --text: #e2e8f0;
-    --muted: #94a3b8;
+    --muted: #fdfdfd;
     --primary: #f59e0b;
     --accent: #fbbf24;
     --border: rgba(148, 163, 184, 0.15);
@@ -144,6 +144,18 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 3rem 0 4rem;
+    background-image: url("img/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.full-bg {
+  background-image: url("img/foto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* opsional, parallax */
+  min-height: 100vh;
 }
 
 .hero-content {
