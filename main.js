@@ -1,6 +1,7 @@
 // Mobile Navigation Toggle
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
+const navLinksList = document.querySelectorAll('.nav-links li');
 
 if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
