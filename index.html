@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Alfin</title>
-    <link rel="stylesheet" href="sytle.css">
+    <meta name="description" content="Portofolio Alfin - Creative Web Developer">
+    <title>Portofolio Alfin | Creative Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="./main.js" defer></script>
 
 </head>
@@ -12,7 +16,13 @@
     <header class="site-header">
         <nav class="navbar">
             <a class="brand" href="#home">Portofolio Alfin</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#skills">Keahlian</a></li>
                 <li><a href="#projects">Proyek</a></li>
@@ -20,18 +30,21 @@
             </ul>
         </nav>
         <section class="hero" id="home">
-            <div>
+            <div class="hero-content">
                 <div class="hero-photo">
-                    <img src="photo profile-alfin.jpeg" alt="Foto Profil Alfin">
+                    <img src="img/photo profile-alfin.jpeg" alt="Foto Profil Alfin">
                 </div>
                 <p class="eyebrow">Creative Web Developer</p>
-                <h1>Alfin</h1>
-                <p class="hero-text">Saya seorang pengembang web kreatif yang membuat desain modern dan pengalaman pengguna yang menarik.</p>
-                <a class="btn" href="#contact">Hubungi Saya</a>
+                <h1>Halo, Saya <span class="highlight">Alfin</span></h1>
+                <p class="hero-text">Saya seorang pengembang web kreatif yang membuat desain modern, responsif, dan pengalaman pengguna yang menarik.</p>
+                <div class="hero-actions">
+                    <a class="btn" href="#projects">Lihat Proyek</a>
+                    <a class="btn btn-outline" href="#contact">Hubungi Saya</a>
+                </div>
             </div>
             <div class="hero-card">
                 <h2>Selamat Datang!</h2>
-                <p>Jelajahi portofolio saya untuk melihat proyek, keahlian, dan cara saya bisa membantu membawa ide Anda online.</p>
+                <p>Jelajahi portofolio saya untuk melihat proyek, keahlian, dan cara saya bisa membantu mewujudkan ide Anda menjadi website yang modern dan fungsional.</p>
             </div>
         </section>
     </header>
@@ -39,67 +52,114 @@
     <main>
         <section class="section" id="about">
             <div class="section-header">
-                <span>02</span>
+                <span>01</span>
                 <h2>Tentang Saya</h2>
             </div>
-            <p>Saya fokus membangun website responsif dengan desain bersih dan performa cepat. Saya memiliki ketertarikan kuat pada HTML, CSS, JavaScript, serta pengalaman membuat situs portfolio dan aplikasi web kecil.</p>
+            <div class="about-content">
+                <p>Saya fokus membangun website responsif dengan desain bersih dan performa cepat. Saya memiliki ketertarikan kuat pada HTML, CSS, JavaScript, serta pengalaman membuat situs portfolio dan aplikasi web kecil.</p>
+                <p>Saya selalu berusaha menciptakan solusi web yang tidak hanya indah dipandang, tetapi juga mudah digunakan dan ramah di semua perangkat.</p>
+            </div>
         </section>
 
         <section class="section" id="skills">
             <div class="section-header">
-                <span>03</span>
+                <span>02</span>
                 <h2>Keahlian</h2>
             </div>
             <div class="grid cards">
                 <article class="card">
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, JavaScript, responsive design, animasi sederhana.</p>
+                    <div class="card-icon">💻</div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS3, JavaScript, Responsive Design, Animasi CSS, & interaksi web.</p>
                 </article>
                 <article class="card">
-                    <h3>Desain</h3>
-                    <p>UI modern, tipografi, penggunaan warna yang konsisten, tata letak user-friendly.</p>
+                    <div class="card-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Desain modern, tipografi, pemilihan warna konsisten, dan layout yang user-friendly.</p>
                 </article>
                 <article class="card">
-                    <h3>Pengembangan</h3>
-                    <p>Membangun proyek dengan struktur bersih, integrasi sederhana, dan optimisasi performa.</p>
+                    <div class="card-icon">⚡</div>
+                    <h3>Pengembangan Web</h3>
+                    <p>Struktur kode bersih, optimisasi performa, kompatibilitas lintas browser.</p>
                 </article>
             </div>
         </section>
 
         <section class="section" id="projects">
             <div class="section-header">
-                <span>04</span>
+                <span>03</span>
                 <h2>Proyek</h2>
             </div>
             <div class="grid cards">
                 <article class="project-card">
-                    <h3>Website Portofolio</h3>
-                    <p>Desain modern, navigasi sederhana, dan konten yang mudah dibaca.</p>
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Website Portofolio</h3>
+                        <p>Desain modern, navigasi sederhana, animasi halus, dan konten yang mudah dibaca.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
                 </article>
                 <article class="project-card">
-                    <h3>Landing Page</h3>
-                    <p>Halaman promosi yang responsif, cepat, dan cocok untuk mempromosikan layanan atau produk.</p>
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Landing Page</h3>
+                        <p>Halaman promosi yang responsif, cepat, dan cocok untuk mempromosikan layanan atau produk.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
                 </article>
                 <article class="project-card">
-                    <h3>Aplikasi Web Sederhana</h3>
-                    <p>Implementasi fitur interaktif menggunakan JavaScript untuk pengalaman pengguna lebih baik.</p>
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Aplikasi Web Sederhana</h3>
+                        <p>Implementasi fitur interaktif menggunakan JavaScript untuk pengalaman pengguna yang lebih baik.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>
 
         <section class="section contact-section" id="contact">
-            <div class="section-header">
-                <span>05</span>
-                <h2>Kontak : 085640917968</h2>
-                 <p class="contact-info">Email:alfinnugroho318@gmail.com</p>
+            <div class="section-header center">
+                <span>04</span>
+                <h2>Kontak</h2>
             </div>
-            <p>Butuh bantuan membuat website? Kirim pesan dan saya akan segera membalas.</p>
-            <a class="btn" href="mailto:alfinnugroho318@gmail.com">alfinnugroho318@gmail.com</a>
+            <p class="contact-subtitle">Tertarik bekerja sama atau punya pertanyaan? Jangan ragu untuk menghubungi saya!</p>
+            <div class="contact-grid">
+                <a class="contact-card" href="tel:+6285640917968">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <h3>Telepon</h3>
+                        <p>+62 856-4091-7968</p>
+                    </div>
+                </a>
+                <a class="contact-card" href="mailto:alfinnugroho318@gmail.com">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>alfinnugroho318@gmail.com</p>
+                    </div>
+                </a>
+            </div>
+            <div class="contact-cta">
+                <a class="btn" href="mailto:alfinnugroho318@gmail.com">Kirim Email</a>
+            </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>Portofolio Alfin &copy; 2026</p>
+        <p>© 2026 Portofolio Alfin. Dibuat dengan ❤️</p>
     </footer>
 </body>
 </html>
